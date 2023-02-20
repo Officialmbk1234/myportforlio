@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUBARAK PORTFOLIO</title>
+</head>
+<style>
+    body{
+        background-color:aqua;
+        text-align: center;
+        border: 2px solid black;
+    }
+    .mm{
+        border:0;
+        text-align: center;
+        margin-bottom: 200px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top:100PX;
+    }
+    .nn{
+        border:0;
+        margin-top: 400PX;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .bb{
+        border: 0;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 40px;
+    }
+    #rr{
+        border:0;
+         background-color: aqua;
+         width: 50%;
+         cursor:pointer;
+         height: 50px;
+
+    }
+    #rr:hover{
+      background-color: red;
+    }
+    #lolo{
+        border-radius: 30pz;
+        width: 300px;
+        height: 200px;
+    }
+    #jojo{
+        border-radius: 40px;
+        width: 300px;
+        height: 200px;
+        margin-top: 50PX;
+    }
+    a{
+    border: 3px solid;
+    width: 100px;
+    height: 30px;
+    margin-top: 100px;;
+    }
+    #bobo{
+        border-radius: 40px;
+        width: 300px;
+        height: 200px;
+    }
+    img{
+        display:flex;
+        width: 800px;
+        margin: auto;
+        transition: 0;
+    }
+    
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7aacff;
+}
+.col{
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 0;
+    border-right: 20px;
+    border-radius:0;
+    display: block;
+}
+.wrap{
+    width: 100%;
+    display:flex;
+    animation: slide 10s infinite;
+}
+img{
+    width: 100%;;
+}
+
+.mbk{
+    border: 1px solid;
+    margin-top: 700px;
+}
+@keyframes slide {
+ 0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+
+
+</style>
+<body>
+    <div class="col">
+     <div class="wrap">
+    <img src="C:\Users\hp\Desktop\mbk\images\IMG-20230217-WA0039.jpg" style="height:500px ;">
+    <img src ="C:\Users\hp\Desktop\mbk\images\IMG-20230217-WA0038.jpg" style="height: 500px;">
+     </div>
+     </div>
+    <div class="mbk">
+    <img id="jojo" src="C:\Users\hp\Desktop\mbk\images\IMG-20230217-WA0039 - Shortcut.lnk">
+    <h2> MY NAME IS BELLO MUBARAK AKA MBK</h2>
+    <div class="mm">
+
+    </div>
+    <div class="nn">
+        <img id="lolo" src="C:\Users\hp\Desktop\mbk\images\IMG-20230217-WA0038.jpg" alt = " the image did not display">
+        <h2>HEY GUYS</h2><br><br>
+        <p><b> I'm a Web Developer,<br> <br>
+            My araa of interst is a frontent development.<br><br>
+         i make use of frame work such as Angular,Lravel,Rubo On Rail,etc.<br><br>
+        well i also teach students on the basic programming language,<br><br>
+        and also teach them on how to create and style a web page.<br><br>
+        well programmin is something i realy enjoy doing ,<br><br>
+         my favorite progamming language is python,<br><br>
+         i love python because it the way to AI world.</b> </p>
+    </div>
+
+     <IMG id="bobo" src="C:\Users\hp\Desktop\mbk\images\IMG-20230217-WA0041.jpg">  
+    <div class="bb">
+        <h2>THINGS I CAN DO:</h2><br> <br>
+        <P>  <b>Well i build website for small organisation,<br><br>
+            businesses,E-commerce depending on the user need,<br><br>
+           belive me i can create cool desgin for your web site,<br><br>
+            and  i can handle front end development,<br><br>
+            and also back end development,<br><br>
+             i can be refer to as a fullstack developer.</b> </P>
+    </div>
+    <div>
+        <H2><marquee>well you can message me so we can work together</marquee></H2>
+    </div>
+
+        <a href= "mailto:mubarakbello6334@gmail.com"> message me </a>
+    
+       <script>
+       
+ let slides = document.querySelectorAll('.slide-container');
+let index = 0;
+
+function next(){
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}
+
+function prev(){
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active');
+}
+
+</script>
+</body>
+</html>
